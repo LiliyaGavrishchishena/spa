@@ -1,0 +1,35 @@
+.footer {
+  background: rgb(0, 99, 248);
+  color: #fff;
+  padding: 20px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.link {
+  color: #eee;
+}
+
+@media (max-width: 599px) and (min-width: 0px) {
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .link {
+    font-size: 1.8rem;
+  }
+}

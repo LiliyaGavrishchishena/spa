@@ -1,0 +1,97 @@
+.services {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+.services div {
+  text-align: center;
+  background: #fff;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto 50px auto;
+  box-shadow: 0px 10px 30px -9px rgba(0, 0, 0, 0.75);
+}
+
+.text {
+  font-size: 3.4rem;
+  margin: 0px 0px 30px 0px;
+  text-align: center;
+  color: rgb(0, 99, 248);
+  filter: grayscale(0%);
+  border-bottom: 2px solid rgb(0, 99, 248);
+  padding: 20px;
+}
+.title {
+  font-size: 3.1rem;
+  padding: 0;
+  margin: 0;
+}
+.description {
+  padding: 20px;
+}
+@media (max-width: 1310px) and (min-width: 1100px) {
+  .text {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+  }
+  .title {
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 1099px) and (min-width: 850px) {
+  .text {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+  }
+  .title {
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 849px) and (min-width: 600px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .services div {
+    width: 70%;
+  }
+
+  .text {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+  }
+  .title {
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 0px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .services div {
+    width: 80%;
+  }
+
+  .text {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    margin: 0px 0px 30px 0px;
+  }
+  .title {
+    font-size: 2.1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
