@@ -65,7 +65,7 @@
 
   .head {
     width: 75%;
-    padding-top: 40px;
+    padding-top: 350px;
     grid-template-columns: 1fr;
   }
 
@@ -80,7 +80,7 @@
 
   .head {
     width: 75%;
-    padding-top: 10px;
+    padding-top: 100px;
     grid-template-columns: 1fr;
   }
 
@@ -94,13 +94,13 @@
     background-size: 160%;
     height: 270px;
     position: relative;
+    margin-bottom: 300px;
   }
 
   .head {
     width: 75%;
     grid-template-columns: 1fr;
     padding-top: 260px;
-    margin-bottom: 190px; /**/
   }
 
   .title {

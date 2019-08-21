@@ -4,8 +4,6 @@
   height: 820px;
   width: 95%;
   margin: 180px auto 0px auto;
-  -webkit-box-shadow: 0px 10px 20px -11px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 10px 20px -11px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 10px 20px -11px rgba(0, 0, 0, 0.9);
 }
 .gallery div {
@@ -16,7 +14,7 @@
   filter: grayscale(83%);
 }
 .one {
-  background: url('../../images/one.jpg');
+  background: url('../../images/one.jpeg');
   background-size: 160%;
   grid-column-end: span 2;
   grid-row-end: span 2;
