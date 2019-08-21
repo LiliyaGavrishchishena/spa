@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Raleway;
+  background: #eee;
+  color: #111;
+}
+
+body * {
+  transition: all 0.3s ease-in-out;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
