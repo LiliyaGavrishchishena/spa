@@ -1,8 +1,11 @@
 import React from 'react';
 import { DndProvider } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+
 //components
 import Services from './Services';
+import Gallery from './Gallery';
+
 // styles
 import styles from './Main.module.css';
 
@@ -26,6 +29,7 @@ const Main = () => {
       <DndProvider backend={HTML5Backend}>
         <Services />
       </DndProvider>
+      <Gallery />
     </main>
   );
 };

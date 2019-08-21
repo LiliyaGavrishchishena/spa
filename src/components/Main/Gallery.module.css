@@ -1,0 +1,87 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 820px;
+  width: 95%;
+  margin: 180px auto 0px auto;
+  -webkit-box-shadow: 0px 10px 20px -11px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 10px 20px -11px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 20px -11px rgba(0, 0, 0, 0.9);
+}
+.gallery div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(83%);
+}
+.one {
+  background: url('../../images/one.jpg');
+  background-size: 160%;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.two {
+  background: url('../../images/two.jpg');
+  background-size: 160%;
+}
+.three {
+  background: url('../../images/three.jpg');
+  background-size: 160%;
+}
+
+.four {
+  background: url('../../images/four.jpg');
+  background-size: 160%;
+}
+.five {
+  background: url('../../images/five.jpg');
+  background-size: 160%;
+}
+.six {
+  background: url('../../images/six.jpg');
+  background-size: 160%;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover {
+  background-size: 100%;
+  filter: grayscale(0%);
+}
+@media (max-width: 1310px) and (min-width: 1100px) {
+  .gallery {
+    height: 600px;
+  }
+}
+@media (max-width: 1099px) and (min-width: 850px) {
+  .gallery {
+    height: 420px;
+  }
+}
+
+@media (max-width: 849px) and (min-width: 600px) {
+  .gallery {
+    height: 400px;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 0px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin: 30px auto 0px auto;
+  }
+  .gallery div {
+    height: 200px;
+  }
+
+  .one {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+  }
+}
