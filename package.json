@@ -2,7 +2,9 @@
   "name": "spa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://LiliyaGavrishchishena.github.io/spa/",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "immutability-helper": "^3.0.1",
     "react": "^16.9.0",
     "react-dnd": "^9.3.4",
@@ -13,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -31,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/LiliyaGavrishchishena/spa.git",
+  "author": "liliya.gavrishchishena@gmail.com",
+  "description": "React, react-dnd"
 }
