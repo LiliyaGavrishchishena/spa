@@ -1,13 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //components
 import Nav from './Nav';
+//configs
+import routes from '../../configs/routes';
+import navItems from '../../configs/main-nav';
 // styles
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <Nav />
+      <Nav items={navItems} />
       <div className={styles.head}>
         <h1 className={styles.title}>
           We Create,
@@ -24,9 +28,9 @@ const Header = () => {
             Save them for designing your next best website.
           </p>
           <div>
-            <a className={styles.contact} href="#">
+            <Link className={styles.contact} to={routes.CONTACT}>
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

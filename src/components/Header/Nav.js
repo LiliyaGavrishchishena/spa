@@ -1,29 +1,27 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 //components
 import Logo from './Logo';
 // styles
 import styles from './Nav.module.css';
 
-const Nav = () => {
+const Nav = ({ items = [] }) => {
   return (
     <nav className={styles.nav}>
       <Logo className={styles.logo} />
       <ul className={styles.list}>
-        <li>
-          <a className={styles.link} href="#">
-            Pricing
-          </a>
-        </li>
-        <li>
-          <a className={styles.link} href="#">
-            Mission
-          </a>
-        </li>
-        <li>
-          <a className={styles.link} href="#">
-            Contact
-          </a>
-        </li>
+        {items.map(({ name, path }) => (
+          <li key={name} className={styles.link}>
+            <NavLink
+              exact
+              to={path}
+              activeClassName={styles.active}
+              className={styles.link}
+            >
+              {name}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

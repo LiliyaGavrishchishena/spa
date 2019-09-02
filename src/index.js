@@ -1,8 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { render } from 'react-dom';
 
 import './index.css';
 //components
 import App from './components/App';
 
-render(<App />, document.getElementById('root'));
+render(
+  <BrowserRouter>
+    <Route component={App} />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
