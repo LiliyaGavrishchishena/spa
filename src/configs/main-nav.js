@@ -2,15 +2,11 @@ import routes from './routes';
 
 export default [
   {
-    name: 'Pricing',
-    path: routes.PRICING
-  },
-  {
     name: 'Mission',
-    path: routes.MISSION
+    path: routes.MISSION,
   },
   {
     name: 'Contact',
-    path: routes.CONTACT
-  }
+    path: routes.CONTACT,
+  },
 ];

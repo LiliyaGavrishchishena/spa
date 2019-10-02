@@ -16,7 +16,7 @@
 }
 
 .list {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   display: grid;
   list-style: none;
@@ -30,6 +30,9 @@
   text-decoration: none;
   font-weight: bold;
   display: block;
+}
+.link:hover {
+  color: #0063f8;
 }
 
 @media (max-width: 599px) and (min-width: 0px) {
