@@ -1,7 +1,6 @@
 Drag and Drop for React with @media rules
 
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+[SPA on React](LiliyaGavrishchishena.github.io/spa).
 
 ## In order to start the project
 
